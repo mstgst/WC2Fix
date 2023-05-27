@@ -11,7 +11,7 @@ local strings = {
 }
 
 function pick_advance.has_options(u)
-	return u and #u.advances_to > 1 and wml.variables.wc2_config_enable_pya
+	return u and #u.advances_to > 0 and wml.variables.wc2_config_enable_pya
 end
 
 on_event("pre_advance", function(ec)
